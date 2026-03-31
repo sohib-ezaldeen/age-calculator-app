@@ -32,8 +32,8 @@ main {
 }
 @media(max-width:768px){
   main{
-    max-width: 375px;
-    padding: 40px 10px ;
+    max-width: 320px;
+    padding: 40px 15px ;
   }
   .inputs{
     justify-content: center;
@@ -44,7 +44,6 @@ form {
 }
 .inputs {
   display: flex;
-  justify-content: flex-start;
   gap: 20px;
 }
 .day-filed,
@@ -73,7 +72,7 @@ input {
 }
 @media(max-width:768px){
   input{
-    max-width: 80px;
+    max-width: 75px;
   }
 }
 
