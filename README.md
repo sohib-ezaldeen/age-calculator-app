@@ -5,7 +5,7 @@ It calculates your age in **years, months, and days** based on your birth date. 
 
 ## 🌐 Live Demo
 
-[View Live Demo](#) *(replace with actual link if hosted)*  
+[View Live Demo](#) https://sohib-ezaldeen.github.io/age-calculator-app/  
 
 ## 🚀 Features
 
