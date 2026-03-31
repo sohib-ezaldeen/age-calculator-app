@@ -1,0 +1,145 @@
+:root {
+  --Purple-500: hsl(259, 100%, 65%);
+  --Red-400: hsl(0, 100%, 67%);
+  --White: hsl(0, 100%, 100%);
+  --Grey-100: hsl(0, 0%, 94%);
+  --Grey-200: hsl(0, 0%, 86%);
+  --Grey-500: hsl(0, 1%, 44%);
+  --Black: hsl(0, 0%, 0%);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", "sans-serif";
+  box-sizing: border-box;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--Grey-200);
+}
+main {
+  background-color: var(--White);
+  max-width: 500px;
+  width: 100%;
+  padding: 30px;
+  border-radius: 10px;
+  border-bottom-right-radius: 150px;
+}
+@media(max-width:768px){
+  main{
+    max-width: 375px;
+    padding: 40px 10px ;
+  }
+  .inputs{
+    justify-content: center;
+  }
+}
+form {
+  height: fit-content;
+}
+.inputs {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.day-filed,
+.month-field,
+.year-field {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  letter-spacing: 1.5px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--Grey-500);
+  margin-bottom: 5px;
+}
+input {
+  padding: 10px 10px;
+  width: 100px;
+  font-size: 2rem;
+  font-weight: bold;
+  border: none;
+  border: 1px solid var(--Grey-200);
+  border-radius: 5px;
+  outline: none;
+}
+@media(max-width:768px){
+  input{
+    max-width: 80px;
+  }
+}
+
+span {
+  font-size: 0.6rem;
+  margin-top: 5px;
+  color: var(--Red-400);
+}
+ 
+button {
+  border: none;
+  outline: none;
+  background-color: var(--Purple-500);
+  border-radius: 50%;
+  padding: 15px;
+  text-align: right;
+  cursor: pointer;
+  transition: 0.5s;
+}
+button:hover {
+  opacity: 0.9;
+  transform: scale(1.1);
+
+}
+.btn-box {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  z-index: 2;
+}
+@media(max-width:768px){
+  .btn-box{
+  justify-content: center;
+  margin-top: 25px;
+  }
+}
+.btn-box::before{
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color:var(--Grey-100);
+  top: 50%;
+}
+#result{
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+#result span{
+  font-size: 3.5rem;
+  color: var(--Purple-500);
+  padding-right: 10px;
+}
+
+.none{
+  display: none;
+  
+}
+
+.show{
+  display: block;
+}
+.border-error{
+  
+   border-color: var(--Red-400);
+ 
+}
